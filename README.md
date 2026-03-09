@@ -19,11 +19,11 @@ composer require cline/keyphrase
 
 ## Documentation
 
-- **[Getting Started](cookbook/getting-started.md)** - Installation, quick start, and basic concepts
-- **[Password Generation](cookbook/password-generation.md)** - Character sets, presets, and customization
-- **[Passphrase Generation](cookbook/passphrase-generation.md)** - EFF diceware wordlists and options
-- **[Mnemonic Generation](cookbook/mnemonic-generation.md)** - BIP39 compliance and multi-language support
-- **[Entropy Guide](cookbook/entropy.md)** - Understanding password strength and security
+- **[Getting Started](DOCS.md#doc-docs-readme)** - Installation, quick start, and basic concepts
+- **[Password Generation](DOCS.md#doc-docs-password-generation)** - Character sets, presets, and customization
+- **[Passphrase Generation](DOCS.md#doc-docs-passphrase-generation)** - EFF diceware wordlists and options
+- **[Mnemonic Generation](DOCS.md#doc-docs-mnemonic-generation)** - BIP39 compliance and multi-language support
+- **[Entropy Guide](DOCS.md#doc-docs-entropy)** - Understanding password strength and security
 
 ## Change log
 

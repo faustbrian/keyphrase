@@ -1,10 +1,12 @@
 ## Table of Contents
 
-1. Getting Started (`docs/README.md`)
-2. Password Generation (`docs/password-generation.md`)
-3. Passphrase Generation (`docs/passphrase-generation.md`)
-4. Mnemonic Generation (`docs/mnemonic-generation.md`)
-5. Entropy Guide (`docs/entropy.md`)
+1. [Getting Started](#doc-docs-readme) (`docs/README.md`)
+2. [Password Generation](#doc-docs-password-generation) (`docs/password-generation.md`)
+3. [Passphrase Generation](#doc-docs-passphrase-generation) (`docs/passphrase-generation.md`)
+4. [Mnemonic Generation](#doc-docs-mnemonic-generation) (`docs/mnemonic-generation.md`)
+5. [Entropy Guide](#doc-docs-entropy) (`docs/entropy.md`)
+<a id="doc-docs-readme"></a>
+
 Welcome to Keyphrase, a modern PHP library for generating secure passwords, passphrases, and BIP39 mnemonics with an immutable, fluent API.
 
 ## Installation
@@ -137,14 +139,16 @@ $entropy = PasswordGenerator::create()
 // Returns: 95.27 (bits of entropy)
 ```
 
-See the [Entropy Guide](entropy.md) for more details on security strength.
+See the [Entropy Guide](#doc-docs-entropy) for more details on security strength.
 
 ## Next Steps
 
-- **[Password Generation](password-generation.md)** - Detailed password options
-- **[Passphrase Generation](passphrase-generation.md)** - EFF diceware passphrases
-- **[Mnemonic Generation](mnemonic-generation.md)** - BIP39 compliance
-- **[Entropy Guide](entropy.md)** - Understanding password strength
+- **[Password Generation](#doc-docs-password-generation)** - Detailed password options
+- **[Passphrase Generation](#doc-docs-passphrase-generation)** - EFF diceware passphrases
+- **[Mnemonic Generation](#doc-docs-mnemonic-generation)** - BIP39 compliance
+- **[Entropy Guide](#doc-docs-entropy)** - Understanding password strength
+
+<a id="doc-docs-password-generation"></a>
 
 The `PasswordGenerator` creates secure random passwords with customizable character sets, lengths, and exclusions.
 
@@ -360,6 +364,8 @@ $passwords = $generator->generateMany(5);
 | High Security | 24+ | `->length(24)->withSymbols()->excludeAmbiguous()` |
 | API Key | 32+ | `->length(32)->alphanumeric()` |
 | Master Password | 20+ | `->length(20)->withSymbols()` |
+
+<a id="doc-docs-passphrase-generation"></a>
 
 The `PassphraseGenerator` creates memorable yet secure passphrases using the EFF diceware wordlists.
 
@@ -599,6 +605,8 @@ Passphrases offer several advantages over traditional passwords:
 | 8-char password | `K9#mPx$2` | ~52 bits | Hard |
 | 6-word passphrase | `correct-horse-battery-staple-cloud-mint` | ~77 bits | Easy |
 | 12-char password | `K9#mPx$2nQwR` | ~79 bits | Very Hard |
+
+<a id="doc-docs-mnemonic-generation"></a>
 
 The `MnemonicGenerator` creates BIP39-compliant mnemonic phrases for cryptocurrency wallets and secure key derivation.
 
@@ -850,6 +858,8 @@ For maximum security:
 - Store the mnemonic securely (metal backup, safety deposit box)
 - Never store digitally or share online
 - Test recovery before depositing funds
+
+<a id="doc-docs-entropy"></a>
 
 Understanding entropy helps you make informed decisions about password and passphrase security.
 
