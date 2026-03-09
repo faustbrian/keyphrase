@@ -1,10 +1,10 @@
 ## Table of Contents
 
-1. [Getting Started](#doc-docs-readme) (`docs/README.md`)
-2. [Password Generation](#doc-docs-password-generation) (`docs/password-generation.md`)
-3. [Passphrase Generation](#doc-docs-passphrase-generation) (`docs/passphrase-generation.md`)
-4. [Mnemonic Generation](#doc-docs-mnemonic-generation) (`docs/mnemonic-generation.md`)
-5. [Entropy Guide](#doc-docs-entropy) (`docs/entropy.md`)
+1. [Getting Started](#doc-docs-readme)
+2. [Password Generation](#doc-docs-password-generation)
+3. [Passphrase Generation](#doc-docs-passphrase-generation)
+4. [Mnemonic Generation](#doc-docs-mnemonic-generation)
+5. [Entropy Guide](#doc-docs-entropy)
 <a id="doc-docs-readme"></a>
 
 Welcome to Keyphrase, a modern PHP library for generating secure passwords, passphrases, and BIP39 mnemonics with an immutable, fluent API.
